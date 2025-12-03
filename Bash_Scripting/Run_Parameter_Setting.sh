@@ -1,5 +1,5 @@
 #!/bin/bash
-# run_suite.sh  →  example of a parameter sweep
+# Run_Parameter_Setting.sh  →  example of a parameter sweep
 for U in 2 4 6 8; do
   for z0 in 0.01 0.1 1.0; do
     casename="U${U}_z0${z0}"
