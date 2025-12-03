@@ -1,3 +1,8 @@
+for the Run_Parameters.sh file:
+How to run it:
+chmod +x submit_sweep.sh
+./submit_sweep.sh
+
 The script performs an automated parameter sweep for simulations by varying two parameters:
 
 U takes values 2, 4, 6, 8
@@ -51,3 +56,19 @@ Then, the script should use ./microhh:
 Otherwise you will get:
 
 microhh: command not found
+
+
+
+
+
+for the Multiple_Run_Paramters.sh:
+for submitting multiple jobs to SLURM on a supercomputer.
+It loops over parameter combinations, writes a job script dynamically, and submits it with sbatch
+
+
+How to run it:
+chmod +x submit_sweep.sh
+./submit_sweep.sh
+
+
+This will submit 12 independent SLURM jobs, each with a different U and z0.
